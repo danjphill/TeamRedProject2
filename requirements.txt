@@ -2,6 +2,6 @@ Flask==1.1.2
 torch==1.11.0
 torchvision==0.12.0
 torch-geometric==2.0.4
-torch-sparse==0.6.13
+
 
 
