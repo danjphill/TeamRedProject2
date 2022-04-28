@@ -108,10 +108,6 @@ def getPrediction(user_neo4j_id):
 #     user_neo4j_id = reverse_customer_mapping[customer_id]
 
     mask = (pred >= 1).nonzero(as_tuple=True)
-    print(pred)
-    print(customer_id)
-    print(user_neo4j_id)
-    print(mask)
 
     ten_predictions = [reverse_article_mapping[el] for el in  mask[0].tolist()[:10]]
     results.append({'user': user_neo4j_id, 'articles': ten_predictions})
